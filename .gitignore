@@ -1,0 +1,71 @@
+# Maven e bytecode
+target/
+!**/src/main/**/target/
+!**/src/test/**/target/
+*.class
+
+# IntelliJ IDEA
+.idea/*
+!.idea/codeStyles/
+!.idea/inspectionProfiles/
+*.iml
+*.ipr
+*.iws
+/out/
+
+# Eclipse e Spring Tools
+.apt_generated/
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache/
+
+# VS Code
+.vscode/*
+!.vscode/extensions.json
+!.vscode/tasks.json
+
+# Logs, arquivos temporários e backups de editores
+*.log
+/logs/
+/tmp/
+*.tmp
+*.swp
+*.swo
+*~
+
+# Windows, macOS e Linux
+Thumbs.db
+Desktop.ini
+.DS_Store
+._*
+.Spotlight-V100/
+.Trashes/
+.directory
+.Trash-*/
+
+# Configuração local e segredos
+.env
+.env.*
+!.env.example
+application-local.properties
+application-local.yml
+application-local.yaml
+application-secrets.properties
+application-secrets.yml
+application-secrets.yaml
+/compose.local.yml
+/compose.local.yaml
+/docker-compose.local.yml
+/docker-compose.local.yaml
+/secrets/
+credentials.local.json
+secrets.local.properties
+secrets.local.yml
+secrets.local.yaml
+
+# Arquivos pessoais na raiz
+/NOTES.local.md
+/TODO.local.md
