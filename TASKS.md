@@ -10,13 +10,14 @@
 |---|---|---|
 | Validar decisões iniciais | Regras e arquitetura aprovadas registradas no contexto do projeto | Pendente |
 | Verificar ambiente e build | Java 21, Maven Wrapper e acesso ao Docker verificados, com build executado | Pendente |
-| Configurar PostgreSQL e esquema inicial | Aplicação conecta usando configuração por ambiente e aplica o esquema em um banco vazio | Pendente |
+| Configurar PostgreSQL e esquema inicial | Aplicação conecta usando configuração por ambiente e aplica o esquema em um banco vazio | Concluído |
 | Padronizar validação e erros | Entradas inválidas retornam uma resposta de erro consistente e testada | Pendente |
 
 ## Gerenciamento de clientes e API Keys
 
 | Tarefa | Critério de aceite | Status |
 |---|---|---|
+| Persistir clientes e API Keys | Repositórios JPA recuperam a cota e o hash vinculado ao cliente. PostgreSQL rejeita uma segunda chave ativa para o mesmo cliente e aceita chaves inativas adicionais | Concluído |
 | Cadastrar e consultar clientes | Cadastro válido pode ser recuperado com sua configuração de cota | Pendente |
 | Proteger acesso administrativo | Acesso autorizado funciona e acesso indevido é rejeitado conforme a regra aprovada | Pendente |
 | Emitir e validar API Keys | Chave emitida autentica e o segredo não é persistido em texto puro | Pendente |
